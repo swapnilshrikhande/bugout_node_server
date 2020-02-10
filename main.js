@@ -4,7 +4,7 @@ var wrtc = require("wrtc");
 
 var wt = new WebTorrent({tracker: {wrtc: wrtc}});
 
-var b = Bugout("eternus-chat-room",{wt: wt});
+var b = Bugout({wt: wt});
 
 // b.on("announce", console.log.bind(console, "Announced:"));
 b.on("connections", console.log.bind(console, "Connections:"));
